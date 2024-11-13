@@ -1,0 +1,416 @@
+/* Для повтор компонентов */
+
+:root {
+  --black-color: #1a1a1a;
+  --grey-color: #4a4a4a;
+  --orange-color: #ffc107;
+  --shadows-color: #b3b3b3;
+  --transition-duration: 0.3s;
+}
+
+/* База */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.app {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--black-color);
+  background-color: grey;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Лого */
+
+.logo {
+  width: 25.5rem;
+  display: block;
+}
+
+/* Кнопка */
+
+.btn {
+  display: inline-block;
+  padding: 20px 80px;
+  border-radius: 15px;
+  background-color: var(--grey-color);
+  border: none;
+  color: white;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: outline-color var(--transition-duration),
+    background-color var(--transition-duration);
+}
+
+.btn:focus-visible {
+  outline-color: var(--grey-color);
+  color: var(--orange-color);
+}
+
+.btn:hover {
+  outline-color: var(--grey-color);
+  color: var(--orange-color);
+}
+
+.btn:active {
+  outline-color: var(--grey-color);
+  color: var(--orange-color);
+}
+
+/* Меню */
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.6rem;
+}
+
+.menu__link {
+  color: white;
+  outline: none;
+  transition: color var(--transition-duration),
+    background-color var(--transition-duration);
+}
+
+.menu__link:focus-visible {
+  color: var(--orange-color);
+}
+
+.menu__link:hover {
+  color: var(--orange-color);
+}
+
+.menu__link:active {
+  color: var(--orange-color);
+}
+
+/* Подзаголовок */
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  color: var(--shadows-color);
+  font-size: 36;
+  text-align: center;
+}
+
+/* Заголовок */
+
+.ttl {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* font-size: 96px; */
+  color: var(--orange-color);
+  font-size: 6rem;
+}
+
+/* Стрелка */
+
+.arrow {
+  display: block;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Фото галереи */
+
+.photo-gallery {
+  width: 360px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px var(--shadows-color);
+}
+
+/* Поле ввода */
+
+.inp {
+  border-radius: 20px;
+  width: 500px;
+  height: 56px;
+  font-size: 32px;
+  outline: none;
+  border: none;
+}
+
+/* Форма */
+
+.callback-form {
+  background-color: var(--grey-color);
+  border-radius: 20px;
+  width: 540px;
+  height: 528px;
+}
+
+.callback-form__body {
+  padding: 41px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.callback-form__text {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  padding: 23px 0px;
+}
+
+.callback-form__text:first-child {
+  padding-top: 0px;
+}
+
+.callback-form__btn {
+  margin-top: 22px;
+  background-color: var(--black-color);
+}
+
+/* Сертификат */
+
+.certificate {
+  background-color: var(--black-color);
+  border-radius: 15px;
+  width: 537px;
+  height: 310px;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.certificate__logo {
+  width: 443px;
+  height: 101px;
+  margin-top: 44px;
+  margin-bottom: 18px;
+}
+
+.certificate__txt {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  width: 253px;
+  margin: 0;
+}
+
+/* Номинал */
+
+.nominal {
+  width: 244px;
+  height: 58px;
+  background-color: var(--black-color);
+  border-radius: 15px;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nominal__value {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nominal:focus-visible {
+  background-color: var(--orange-color);
+}
+
+.nominal:hover {
+  background-color: var(--orange-color);
+}
+
+.nominal:active {
+  background-color: var(--orange-color);
+}
+
+/* Контейнер */
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* Header  */
+
+.header {
+  background-color: var(--black-color);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.header__logo {
+  display: block;
+}
+
+/* Блок приветствия */
+
+.welkom-block {
+  background-image: url("../src/assets/wb.png");
+  background-size: cover; /* Масштабирует изображение, чтобы покрыть всю область */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Отключает повтор */
+  width: 100%; /* Задает ширину в 100% от ширины окна */
+  height: calc(100vh - 59px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.welkom-block__container {
+  transform: translateY(-30px);
+}
+
+.welkom-block__text-detaling {
+  margin: 0;
+  padding-bottom: 45px;
+  /* font-size: 36px; */
+  color: var(--orange-color);
+  font-size: 2.25rem;
+}
+
+.welkom-block__text {
+  margin: 0;
+  padding-top: 45px;
+  /* font-size: 36px; */
+  color: var(--orange-color);
+  font-size: 2.25rem;
+}
+
+.welkom-block__arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
+}
+@media (max-width: 778px) {
+  .menu__list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .container {
+    max-width: 690px;
+  }
+  .header__logo {
+    width: 12rem;
+    height: 6rem;
+  }
+}
+@media (max-width: 576px) {
+  .ttl {
+    font-size: 4rem;
+  }
+  .welkom-block__text-detaling {
+    font-size: 2rem;
+  }
+  .welkom-block__text {
+    font-size: 1.5rem;
+  }
+  .container {
+    max-width: 510px;
+  }
+
+  .welkom-block__arrow {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .ttl {
+    font-size: 2rem;
+  }
+  .welkom-block__text-detaling {
+    font-size: 1.25rem;
+  }
+  .welkom-block__text {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 280px;
+  }
+  .welkom-block__arrow {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .header__logo {
+    width: 6.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .ttl {
+    font-size: 1.5rem;
+  }
+  .welkom-block__text-detaling {
+    font-size: 0.75rem;
+  }
+  .welkom-block__text {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 280px;
+  }
+  .welkom-block__arrow {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .header__logo {
+    width: 6.25rem;
+    height: 3.25rem;
+  }
+}
