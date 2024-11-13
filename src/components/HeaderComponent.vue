@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="container header__container">
+    <div class="header__container header__container-padding">
       <img
         src="../assets/logo.svg"
         alt="BleskDetailing"
