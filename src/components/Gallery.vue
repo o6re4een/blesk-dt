@@ -18,7 +18,7 @@
   justify-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .main-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -35,10 +35,13 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 576px) {
+  .main-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .photo-gallery {
     width: fit-content;
-    height: 186px;
+    height: 220px;
     border-radius: 20px;
     box-shadow: 2px 4px 8px var(--shadows-color);
   }

@@ -5,6 +5,7 @@ import ContactForm from "./components/ContactForm.vue";
 import GiftCertificate from "./components/GiftCertificate.vue";
 import AboutUs from "./components/AboutUs.vue";
 import BeforeAfterGallery from "./components/BeforeAfterGallery.vue";
+import Reviews from "./components/Reviews.vue";
 </script>
 
 <template>
@@ -12,13 +13,14 @@ import BeforeAfterGallery from "./components/BeforeAfterGallery.vue";
     <HeaderComponent></HeaderComponent>
     <div class="container page-container">
       <ResultComponent></ResultComponent>
-      <BeforeAfterGallery/>
+      <!-- <BeforeAfterGallery /> -->
       <ContactForm></ContactForm>
-      <GiftCertificate></GiftCertificate>
-      <AboutUs></AboutUs>
+      <!-- <GiftCertificate></GiftCertificate> -->
+      <!-- <AboutUs></AboutUs> -->
+
+      <Reviews></Reviews>
     </div>
   </div>
-  
 </template>
 
 <style scoped></style>

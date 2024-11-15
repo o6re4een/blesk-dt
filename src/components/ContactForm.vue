@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="section-col form">
     <div>
       <h2 class="subtitle">Нам доверяют клиенты</h2>
       <h3 class="secondary__subtitle">Заполните данные для записи</h3>
@@ -32,7 +32,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }
 
 .callback-form__item {
