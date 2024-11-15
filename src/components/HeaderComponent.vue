@@ -1,12 +1,12 @@
 <template>
-  <header class="header">
-    <div class="header__container header__container-padding">
+  <header class=" header">
+    <div class="container header__container header__container-padding">
       <img
         src="../assets/logo.svg"
         alt="BleskDetailing"
         class="logo header__logo"
       />
-      <nav class="menu header__menu">
+      <nav class=" menu header__menu">
         <ul class="menu__list header__menu-list">
           <li class="menu__item">
             <a href="" class="menu__link">Услуги</a>
