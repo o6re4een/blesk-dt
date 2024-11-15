@@ -1,6 +1,6 @@
 <template>
   <section class="result">
-    <h2 class="secondary__ttl">Наши результаты</h2>
+    <h2 class="subtitle">Наши результаты</h2>
     <Gallery></Gallery>
   </section>
 </template>

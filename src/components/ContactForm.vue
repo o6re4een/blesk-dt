@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div>
-      <h2 class="secondary__ttl">Нам доверяют клиенты</h2>
+      <h2 class="subtitle">Нам доверяют клиенты</h2>
       <h3 class="secondary__subtitle">Заполните данные для записи</h3>
     </div>
 
