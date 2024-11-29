@@ -96,7 +96,7 @@ a {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .menu__link {
@@ -299,6 +299,9 @@ a {
 
 .header {
   background-color: var(--black-color);
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 .header__container {
@@ -307,10 +310,10 @@ a {
   justify-content: space-between;
   align-items: center;
   /* padding-right: 15px; */
-  position: sticky;
-  top: 0;
+  
+  
   background-color: var(--black-color);
-  z-index: 1;
+  
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -383,9 +386,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .secondary__subtitle {
-    font-size: calc(3rem * (1024 / 1440)); /* Адаптивный расчет */
-  }
+  
   .container {
     max-width: 1024px;
   }
@@ -400,6 +401,23 @@ a {
   .subtitle {
     font-size: 2.02rem;
   }
+  
+  .secondary__subtitle {
+    font-size: 1.77rem;
+  }
+
+  .welkom-block__text-detaling {
+    font-size: 1.9rem;
+  }
+
+  .welkom-block__ttl {
+    font-size: 5rem;
+  }
+
+  .welkom-block__text {
+    font-size: 1.8rem;
+  }
+
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -416,6 +434,23 @@ a {
   .subtitle {
     font-size: 1.82rem;
   }
+
+  .secondary__subtitle {
+    font-size: 1.57rem;
+  }
+
+  .welkom-block__text-detaling {
+    font-size: 1.9rem;
+  }
+
+  .welkom-block__ttl {
+    font-size: 4.68rem;
+  }
+
+  .welkom-block__text {
+    font-size: 1.25rem;
+  }
+
 }
 @media screen and (max-width: 576px) {
   .ttl {
@@ -439,7 +474,7 @@ a {
     width: 320px;
   }
   .secondary__subtitle {
-    font-size: calc(3rem * (576 / 1440));
+    font-size: 1.4rem;
   }
 
   .welkom-block__arrow {

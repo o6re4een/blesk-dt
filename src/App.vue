@@ -9,16 +9,15 @@ import Reviews from "./components/Reviews.vue";
 </script>
 
 <template>
-  <div class="page-container">
+  <div class="">
     <HeaderComponent></HeaderComponent>
     <div class="container page-container">
       <ResultComponent></ResultComponent>
-      <!-- <BeforeAfterGallery /> -->
+      <BeforeAfterGallery />
       <ContactForm></ContactForm>
-      <!-- <GiftCertificate></GiftCertificate> -->
-      <!-- <AboutUs></AboutUs> -->
-
+      <GiftCertificate></GiftCertificate>    
       <Reviews></Reviews>
+      <AboutUs></AboutUs>
     </div>
   </div>
 </template>

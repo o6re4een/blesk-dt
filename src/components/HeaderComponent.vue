@@ -27,7 +27,7 @@
         <img src="../assets/Menu.png" alt="" class="menu-icon" />
       </nav>
     </div>
-
+  </header>
     <div class="welkom-block">
       <div class="container welkom-block__container">
         <p class="welkom-block__text-detaling">ДЕТЕЙЛИНГ - ЦЕНТР</p>
@@ -43,5 +43,5 @@
         class="arrow welkom-block__arrow"
       />
     </div>
-  </header>
+  
 </template>

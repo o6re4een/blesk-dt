@@ -60,7 +60,6 @@ const slides = [
 }
 
 .body-ba-gallery_secondary-subtitle {
-    font-size: 2rem;
     margin: 0;
     margin-bottom: 7.5rem;
 }
@@ -69,34 +68,7 @@ const slides = [
     margin-bottom: 5.6875rem;
 }
 
-@media screen and (max-width: 992px) { 
-    .body-ba-gallery_secondary-subtitle {
-        font-size: 1.8rem;
-    }
 
-}
-
-@media screen and (max-width: 768px) { 
-    .body-ba-gallery_secondary-subtitle {
-        font-size: 1.6rem;
-    }
-
-}
-
-
-
-@media screen and (max-width: 576px) { 
-    .body-ba-gallery_secondary-subtitle {
-        font-size: 1.4rem;
-    }
-
-}
-
-@media screen and (max-width: 320px) { 
-    .body-ba-gallery_secondary-subtitle {
-        font-size: 1.2rem;
-    }
-}
 
 
 </style>
