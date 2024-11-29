@@ -1,5 +1,5 @@
 <template>
-  <div class="section-col form">
+  <div class="section-col form" id="services">
     <div>
       <h2 class="subtitle">Нам доверяют клиенты</h2>
       <h3 class="secondary__subtitle">Заполните данные для записи</h3>
@@ -41,9 +41,16 @@
   gap: 10px;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 380px) {
   .callback-form__input {
-    width: 84vw;
+    width: 80vw;
+  }
+  .callback-form__btn {
+    width: 80vw;
+  }
+  .callback-form__body {
+    padding: 20px 5px;
+    max-width: 92vw;
   }
 }
 </style>

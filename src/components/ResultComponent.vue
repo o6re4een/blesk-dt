@@ -1,5 +1,5 @@
 <template>
-  <section class="section-col">
+  <section class="section-col" id="result">
     <h2 class="subtitle">Наши результаты</h2>
     <Gallery></Gallery>
   </section>

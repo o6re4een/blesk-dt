@@ -43,4 +43,10 @@ const props = defineProps({
   font-size: 1.25rem;
   text-align: center;
 }
+
+@media screen and (max-width: 380px) {
+  .review {
+    max-width: 90vw;
+  }
+}
 </style>

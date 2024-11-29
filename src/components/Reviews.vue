@@ -1,5 +1,5 @@
 <template>
-  <section href="#reviews" class="container section-col">
+  <section id="reviews" class="container section-col">
     <h2 class="subtitle">Отзывы</h2>
     <div class="rewiews-container">
       <ReviewComponent

@@ -12,11 +12,11 @@ import Reviews from "./components/Reviews.vue";
   <div class="">
     <HeaderComponent></HeaderComponent>
     <div class="container page-container">
-      <!-- <ResultComponent></ResultComponent>
+      <ResultComponent></ResultComponent>
       <BeforeAfterGallery />
       <ContactForm></ContactForm>
-      <GiftCertificate></GiftCertificate>    
-      <Reviews></Reviews> -->
+      <GiftCertificate></GiftCertificate>
+      <Reviews></Reviews>
       <AboutUs></AboutUs>
     </div>
   </div>
