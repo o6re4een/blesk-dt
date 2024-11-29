@@ -41,6 +41,7 @@ import CertificateComponent from "./CertificateComponent.vue";
 .gift-sert__block {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 

@@ -6,6 +6,7 @@ import GiftCertificate from "./components/GiftCertificate.vue";
 import AboutUs from "./components/AboutUs.vue";
 import BeforeAfterGallery from "./components/BeforeAfterGallery.vue";
 import Reviews from "./components/Reviews.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Reviews from "./components/Reviews.vue";
       <GiftCertificate></GiftCertificate>
       <Reviews></Reviews>
       <AboutUs></AboutUs>
+      <Footer></Footer>
     </div>
   </div>
 </template>

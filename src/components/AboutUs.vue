@@ -23,10 +23,15 @@
 <script setup></script>
 
 <style scoped>
+
+.about-us__subtitle {
+    padding-bottom: 20px;
+}
 .about-us__txt {
   color: var(--shadows-color);
   font-size: 2rem;
   text-align: center;
+  padding: 60px 0px;
 }
 
 .about-us__subtitle {
@@ -45,6 +50,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.about-us__map {
+    padding: 60px;
 }
 
 .map {
