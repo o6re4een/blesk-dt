@@ -338,7 +338,7 @@ a {
   /* background-attachment: fixed; */
   background-position: center; /* Центрирует изображение */
   background-repeat: no-repeat; /* Отключает повтор */
-  min-height: 94vh;
+  height: 94vh;
 
   display: flex;
   justify-content: center;
@@ -380,7 +380,7 @@ a {
 
 /* Subtitle check second heading on form component figma */
 .secondary__subtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--shadows-color);
   text-align: center;
 }
