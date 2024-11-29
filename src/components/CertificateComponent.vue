@@ -9,7 +9,18 @@
   </div>
 </template>
 
-<script>
+<style scoped>
+.certificate__logo {
+  max-width: 443px;
+  height: auto;
+  padding-top: 40px;
+}
 
+@media screen and (max-width: 480px) {
+  .certificate__logo {
+    max-width: 90vw;
+  }
+}
+</style>
 
-</script>
+<script></script>

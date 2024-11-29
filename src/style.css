@@ -229,20 +229,16 @@ a {
   background-color: var(--black-color);
   border-radius: 15px;
   width: 537px;
-  height: 310px;
+  height: auto;
+  max-height: 252px;
   border: 3px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 18px;
+
   margin: 0;
   padding: 0;
-}
-
-.certificate__logo {
-  width: 443px;
-  height: 101px;
-  margin-top: 44px;
-  margin-bottom: 18px;
 }
 
 .certificate__txt {
@@ -251,6 +247,7 @@ a {
   font-size: 40px;
   width: 253px;
   margin: 0;
+  padding-bottom: 40px;
 }
 
 /* Номинал */
@@ -310,10 +307,9 @@ a {
   justify-content: space-between;
   align-items: center;
   /* padding-right: 15px; */
-  
-  
+
   background-color: var(--black-color);
-  
+
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -335,10 +331,10 @@ a {
   /* Масштабирует изображение, чтобы покрыть всю область */
   background-size: cover;
 
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center; /* Центрирует изображение */
   background-repeat: no-repeat; /* Отключает повтор */
-  min-height: 94vh;
+  min-height: calc(100vh - 60px);
 
   display: flex;
   justify-content: center;
@@ -386,7 +382,6 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  
   .container {
     max-width: 1024px;
   }
@@ -401,7 +396,7 @@ a {
   .subtitle {
     font-size: 2.02rem;
   }
-  
+
   .secondary__subtitle {
     font-size: 1.77rem;
   }
@@ -417,7 +412,6 @@ a {
   .welkom-block__text {
     font-size: 1.8rem;
   }
-
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -450,7 +444,6 @@ a {
   .welkom-block__text {
     font-size: 1.25rem;
   }
-
 }
 @media screen and (max-width: 576px) {
   .ttl {
@@ -467,7 +460,7 @@ a {
   }
 
   .callback-form {
-    width: 400px;
+    width: 92vw;
   }
 
   .inp {
