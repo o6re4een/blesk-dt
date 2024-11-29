@@ -17,46 +17,41 @@
             <div class="map"></div>
         </div>
     </div>
-    
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
-
 .about-us__txt {
-    color: var(--shadows-color);
-    font-size: 2rem;
-    text-align: center;
+  color: var(--shadows-color);
+  font-size: 2rem;
+  text-align: center;
 }
 
 .about-us__subtitle {
-    text-align: start;
+  text-align: start;
 }
 
 .about-us__list {
-    color: var(--shadows-color);
-    font-size: 2rem;
-    margin: 0;
-    
+  color: var(--shadows-color);
+  font-size: 2rem;
+  margin: 0;
 }
 
 .map-container {
-    margin-top: 1.25rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map {
-    background-color: var(--shadows-color);
-    border: 5px solid var(--orange-color);
-    width: 56.875rem;
-    height: 22.6875rem;
-    border-radius: 20px;
+  background-color: var(--shadows-color);
+  border: 5px solid var(--orange-color);
+  width: 90vw;
+  height: 22.6875rem;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1024px) {

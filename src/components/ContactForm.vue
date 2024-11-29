@@ -40,4 +40,10 @@
   flex-direction: column;
   gap: 10px;
 }
+
+@media screen and (max-width: 340px) {
+  .callback-form__input {
+    width: 84vw;
+  }
+}
 </style>
