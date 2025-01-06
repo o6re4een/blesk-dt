@@ -1,12 +1,34 @@
 <template>
   <div class="main-gallery">
+    <img
+      v-for="index in showCount"
+      :key="index"
+      :src="getPath(String(index).padStart(2, '0'))"
+      alt=""
+      class="photo-gallery"
+    />
+
+    <!-- <img src="../assets/results/01.webp" alt="" class="photo-gallery" /> -->
+    <!-- <img src="../assets/1.png" alt="" class="photo-gallery" />
     <img src="../assets/1.png" alt="" class="photo-gallery" />
     <img src="../assets/1.png" alt="" class="photo-gallery" />
-    <img src="../assets/1.png" alt="" class="photo-gallery" />
-    <img src="../assets/1.png" alt="" class="photo-gallery" />
-    <img src="../assets/1.png" alt="" class="photo-gallery" />
+    <img src="../assets/1.png" alt="" class="photo-gallery" /> -->
   </div>
 </template>
+
+<script setup>
+import { computed } from "vue";
+const getPath = (fileIndex) => {
+  return new URL(`../assets/results/${fileIndex}.webp`, import.meta.url).href;
+};
+
+const props = defineProps({
+  showCount: {
+    type: Number,
+    default: 6,
+  },
+});
+</script>
 
 <style scoped>
 .main-gallery {
@@ -14,7 +36,9 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 2fr 1fr 2fr; */
   gap: 10px;
+  row-gap: 40px;
   justify-items: center;
 }
 
