@@ -5,9 +5,20 @@
       alt="BleskDetailing"
       class="logo certificate__logo"
     />
-    <p class="certificate__txt">Сертификат 10 000р</p>
+    <p class="certificate__txt">
+      Сертификат {{ props.selectedValue.toLocaleString("ru-RU") }}р
+    </p>
   </div>
 </template>
+
+<script setup>
+const props = defineProps({
+  selectedValue: {
+    default: "10000",
+    type: Number,
+  },
+});
+</script>
 
 <style scoped>
 .certificate__logo {
@@ -22,5 +33,3 @@
   }
 }
 </style>
-
-<script></script>

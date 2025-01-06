@@ -10,28 +10,57 @@
       </p>
       <div class="sert-nominal__txt">Выберите номинал</div>
       <div class="gift-sert__block">
-        <CertificateComponent class=""></CertificateComponent>
+        <CertificateComponent
+          class=""
+          :selectedValue="selectedValue"
+        ></CertificateComponent>
         <div class="gift-sert__nominal">
           <div class="grid-nominal">
-            <div class="nominal">20 000р</div>
-            <div class="nominal">15 000р</div>
-            <div class="nominal">10 000р</div>
-            <div class="nominal">5 000р</div>
+            <div
+              v-for="value in values"
+              :key="value"
+              class="nominal"
+              :class="{ active: selectedValue === value }"
+              @click="handleClick"
+              :data-value="value"
+            >
+              {{ value.toLocaleString("ru-RU") }}р
+            </div>
           </div>
-          <div class="nominal grid-footer">2 000р</div>
+          <div
+            class="nominal grid-footer"
+            @click="handleClick"
+            data-value="2000"
+          >
+            2 000р
+          </div>
         </div>
       </div>
     </div>
-    <button class="btn btn__gift-sert">Оформить</button>
+    <button class="btn btn__gift-sert" @click="popUpActive = !popUpActive">
+      Оформить
+    </button>
+    <CertForm :selected-value="selectedValue" :active="popUpActive"></CertForm>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { Ref, ref } from "vue";
 import CertificateComponent from "./CertificateComponent.vue";
+import CertForm from "./CertForm.vue";
+
+const popUpActive = ref(false);
+const values: number[] = [20000, 15000, 10000, 5000];
+const selectedValue: Ref<number> = ref(10000);
+
+const handleClick = (e: any) => {
+  selectedValue.value = Number(e?.target?.getAttribute("data-value"));
+};
 </script>
 
 <style scoped>
 .gift-sert {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;

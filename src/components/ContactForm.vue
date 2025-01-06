@@ -6,7 +6,7 @@
     </div>
 
     <form action="" class="callback-form">
-      <div class="callback-form__body">
+      <div class="callback-form__body callback-form__body-padding">
         <div class="callback-form__item">
           <p class="callback-form__text">Ваше имя</p>
           <input type="text" class="inp callback-form__input" />

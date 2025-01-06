@@ -9,19 +9,19 @@
       <nav class="menu header__menu">
         <ul class="menu__list header__menu-list">
           <li class="menu__item">
-            <a href="" class="menu__link">Услуги</a>
+            <a href="#services" class="menu__link">Услуги</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Контакты</a>
+            <a href="#contacts" class="menu__link">Контакты</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Наши работы</a>
+            <a href="#result" class="menu__link">Наши работы</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Отзывы</a>
+            <a href="#reviews" class="menu__link">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">О нас</a>
+            <a href="#about-us" class="menu__link">О нас</a>
           </li>
         </ul>
         <div @click="menuActive = !menuActive">
