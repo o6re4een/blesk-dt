@@ -15,7 +15,9 @@
     </ul>
     <h2 class="subtitle about-us__map">Мы на карте</h2>
     <div class="map-container">
-      <div class="map"></div>
+      <div class="map">
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e313de11bf0129e0f998908f82783edde2be3a4a3ea7502a8a4507e9ca69fd9&amp;source=constructor" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -53,16 +55,18 @@
 }
 
 .about-us__map {
-    padding: 60px;
+    padding: 30px;
 }
 
 .map {
   background-color: var(--shadows-color);
-  border: 5px solid var(--orange-color);
-  width: 90vw;
+  max-width: 1000px;
+  width: 100%;
   height: 22.6875rem;
   border-radius: 20px;
+
 }
+
 
 @media screen and (max-width: 1024px) {
   .txt {

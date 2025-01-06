@@ -129,15 +129,24 @@ const handleClick = (e: any) => {
     justify-content: center;
     gap: 40px;
   }
+  .nominal {
+    font-size: 2.2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .gift-sert__nominal {
     margin-top: 3rem;
   }
+  .nominal {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .certificate {
     max-width: 92vw;
+  }
+  .nominal {
+    font-size: 1.8rem;
   }
 }
 
@@ -149,7 +158,7 @@ const handleClick = (e: any) => {
     max-width: 92vw;
   }
   .nominal {
-    max-width: 92vw;
+    font-size: 1.6rem;
   }
 }
 
@@ -161,6 +170,9 @@ const handleClick = (e: any) => {
     font-size: 1.2rem;
     text-align: center;
     width: 92vw;
+  }
+  .nominal {
+    font-size: 1.4rem;
   }
 }
 </style>

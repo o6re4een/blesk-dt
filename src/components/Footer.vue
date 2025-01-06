@@ -1,28 +1,38 @@
 <template>
     <div class="footer" id="contacts">
-        <div class="footer__elements container">
+        <div class="footer__body container">
             <img src="../assets/footerlogo.png" alt="" class="footer__logo">
-            <div class="footer__arr">
-                <div class="footer__name">
-                    <div class="footer__name-item">
-                        Phone
+            <div class="footer__elements">
+                <div class="footer__element">
+                    <div class="footer__name">
+                        <img class="footer__name-img" src="../assets/footer/ph.png" alt="">
                     </div>
-                    <div class="footer__name-item">
-                        Instagram
-                    </div>
-                    <div class="footer__name-item">
-                        Telegram
-                    </div>
-                </div>
-                <div class="footer__link">
-                    <a class="footer__link-item" href="+79123456789">
-                        +79123456789
+                    <a href="+79123456789" class="footer__link">
+                        +79126015016
                     </a>
-                    <a class="footer__link-item" href="https://www.instagram.com/blesk_team_detail/profilecard/?igsh=ejdqcjBxdjUzOXQ5">
+                </div>
+                <div class="footer__element">
+                    <div class="footer__name">
+                        <img class="footer__name-img" src="../assets/footer/inst.png" alt="">
+                    </div>
+                    <a href="https://www.instagram.com/blesk_team_detail/profilecard/?igsh=ejdqcjBxdjUzOXQ5" class="footer__link">
                         @BLESK_TEAM_DETAIL
                     </a>
-                    <a class="footer__link-item" href="https://t.me/blesk_team_96">
+                </div>
+                <div class="footer__element">
+                    <div class="footer__name">
+                        <img class="footer__name-img" src="../assets/footer/tg.png" alt="">
+                    </div>
+                    <a href="https://t.me/blesk_team_96" class="footer__link">
                         @blesk_team_96
+                    </a>
+                </div>
+                <div class="footer__element">
+                    <div class="footer__name">
+                        <img class="footer__name-img" src="../assets/footer/vk.png" alt="">
+                    </div>
+                    <a href="https://vk.com/detailing96" class="footer__link">
+                        @detailing96
                     </a>
                 </div>
             </div>
@@ -36,14 +46,23 @@
     height: 217px;
 }
 
-.footer {
+.footer__body {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .footer__elements {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.footer__element {
+    display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .footer__item {
@@ -51,74 +70,35 @@
     flex-direction: row;
 }
 
-.footer__arr {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 100px;
-    font-size: 2rem;
-    color: white;
-}
-
-.footer__link{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__logo {
-    /* padding-right: 168px; */
-}
-
-
-.footer__name-item {
-    padding: 10px;
-}
-
-.footer__link-item {
+.footer__link {
     padding: 10px;
     color: white;
 }
 
-.footer__link-item:hover {
+.footer__link:hover {
     color: var(--orange-color);
 }
 
 @media screen and (max-width: 1024px) {
-    .footer__arr {
-        font-size:  1.77rem;
-        gap: 90px;
-    }
-    .footer__logo {
-        height: 90%;
-    }
+   
 }
 @media screen and (max-width: 768px) {
-    .footer__arr {
-        font-size:  1.57rem;
-        gap: 80px;
-    }
-    .footer__logo {
-        height: 80%;
-    }
+   
 }
 @media screen and (max-width: 576px) {
-    .footer__arr {
-        font-size:  1.4rem;
-        gap: 70px;
-    }
     .footer__logo {
-        height: 70%;
+        height: 180px;
+    }
+    .footer__link {
+        font-size: 0.8rem;
+    }
+    .footer__name-img {
+        height: 40px;
     }
 }
 
 @media screen and (max-width: 340px) {
-    .footer__arr {
-        font-size:  0.82rem;
-        gap: 60px;
-    }
-    .footer__logo {
-        height: 60%;
-    }
+ 
 }
 
 </style>

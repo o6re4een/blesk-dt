@@ -19,7 +19,7 @@ import Footer from "./components/Footer.vue";
       <GiftCertificate></GiftCertificate>
       <Reviews></Reviews>
       <AboutUs></AboutUs>
-      <!-- <Footer></Footer> -->
+      <Footer></Footer>
     </div>
   </div>
 </template>
